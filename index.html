@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pathfinding Algorithm Visualizer</h1>
+            <div class="controls">
+                <select id="algorithm-select">
+                    <option value="astar">A* Algorithm</option>
+                    <option value="dijkstra">Dijkstra's Algorithm</option>
+                    <option value="bfs">Breadth First Search</option>
+                    <option value="dfs">Depth First Search</option>
+                </select>
+                <button id="start-btn">Visualize</button>
+                <button id="clear-btn">Clear Board</button>
+                <button id="clear-path-btn">Clear Path</button>
+            </div>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="cell start"></div>
+                    <span>Start Node</span>
+                </div>
+                <div class="legend-item">
+                    <div class="cell end"></div>
+                    <span>End Node</span>
+                </div>
+                <div class="legend-item">
+                    <div class="cell wall"></div>
+                    <span>Wall</span>
+                </div>
+                <div class="legend-item">
+                    <div class="cell visited"></div>
+                    <span>Visited Node</span>
+                </div>
+                <div class="legend-item">
+                    <div class="cell path"></div>
+                    <span>Path Node</span>
+                </div>
+            </div>
+        </header>
+        <div id="grid" class="grid"></div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html> 
