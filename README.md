@@ -58,22 +58,6 @@ http://localhost:3000
 - JavaScript (ES6+)
 - Express.js (for serving the application)
 
-## Project Structure
-
-```
-pathfinding-visualizer/
-├── index.html
-├── styles/
-│   └── style.css
-├── src/
-│   ├── main.js
-│   ├── Grid.js
-│   ├── Node.js
-│   └── algorithms.js
-├── server.js
-└── package.json
-```
-
 ## Contributing
 
 Feel free to submit issues and enhancement requests! 
